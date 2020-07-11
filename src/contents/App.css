@@ -1,0 +1,14 @@
+/** @format */
+
+.nav {
+  transition: ease-in-out 3s;
+}
+
+.scrolled {
+  position: fixed;
+  background: gray;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background 3s;
+}

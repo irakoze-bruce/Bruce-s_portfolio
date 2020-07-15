@@ -1,0 +1,94 @@
+/** @format */
+
+.Contact {
+  font-family: "Teko", sans-serif;
+  padding-top: 2em;
+  padding-bottom: 17em;
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 65vh;
+}
+.title {
+  color: #48485e;
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  margin-bottom: 3em;
+}
+
+.title_h4 {
+  color: #48485e;
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  margin-bottom: 3em;
+  margin-left: -11em;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.Contact_container {
+  display: flex;
+  justify-content: center;
+
+  margin-left: -4em;
+}
+
+.box {
+  margin-left: 3em;
+  text-align: center;
+  color: black;
+}
+
+.text {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin: -0.3em auto;
+  border-radius: 50%;
+  border: 1px solid #2c3e50;
+  line-height: 140px;
+  font-size: 3em;
+}
+.social {
+  margin-left: 29em;
+  margin-bottom: 2em;
+}
+
+h5 {
+  text-align: center;
+  color: black;
+  font-size: 1em;
+}
+.social a {
+  margin-right: 60px;
+  color: #48485e;
+  font-size: 1.4em;
+  transition: ease-in-out 0.3s;
+}
+
+.social a:hover {
+  color: black;
+}
+
+footer {
+  background: white;
+  text-align: center;
+  height: 100px;
+  padding-top: 10px;
+}
+footer p {
+  font-size: 1.4em;
+  margin-bottom: -1em;
+}

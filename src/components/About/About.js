@@ -1,46 +1,50 @@
 /** @format */
 
 import React from "react";
-import style from "./Contact.module.css";
-import { FaEnvelope, FaLocationArrow, FaPhoneAlt } from "react-icons/fa";
+import style from "./About.module.css";
+import pc from "../../assets/images/a.jpg";
+import AOS from "aos";
 import {
   FaFacebook,
   FaTwitter,
   FaInstagram,
   FaSlack,
   FaGithub,
+  FaEnvelope,
 } from "react-icons/fa";
 
-import Aos from "aos";
+function About() {
+  AOS.init();
 
-const Contact = () => {
-  Aos.init();
   return (
-    <div className={style.Contact}>
+    <div
+      className={style.About}
+      id='about'
+      data-aos='fade-up'
+      data-aos-duration='3000'
+    >
       <div
-        className={style.Contact_container}
+        className={style.About_image}
         data-aos='fade-up'
         data-aos-duration='3000'
       >
-        <h1 className={style.title}>Contact me.</h1>
-        <div className={style.box}>
-          <div className={style.address}>
-            <div className={style.link}>
-              <p>
-                <FaLocationArrow />
-              </p>
-            </div>
-            <p className={style.text}>Address:BURUNDI,Bujumbura</p>
-          </div>
-          <div className={style.address}>
-            <div className={style.link}>
-              <p>
-                <FaPhoneAlt />
-              </p>
-            </div>
-            <p className={style.text}>Phone:+25779335848</p>
-          </div>
-        </div>
+        <img src={pc} alt='images' />
+      </div>
+
+      <div
+        className={style.About_description}
+        data-aos='fade-up'
+        data-aos-duration='3000'
+      >
+        <p>
+          my name is <span>Bruce Mars</span> , based in BURUNDI, I am a student
+          at the university of Lake Tanganyilka,
+        </p>
+        <p>
+          {" "}
+          I am a FrontEnd developer, I study and code myself for web{" "}
+          <span>(JavaScript [ReactJs], Html and Css)</span>
+        </p>
       </div>
 
       <div className={style.social}>
@@ -65,6 +69,6 @@ const Contact = () => {
       </div>
     </div>
   );
-};
+}
 
-export default Contact;
+export default About;

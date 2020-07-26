@@ -11,60 +11,62 @@ import {
   FaGithub,
 } from "react-icons/fa";
 
-import Aos from "aos";
-
 const Contact = () => {
-  Aos.init();
   return (
     <div className={style.Contact}>
-      <h1 className={style.title}>Contact me.</h1>
+      <div className={style.ContactContent}>
+        <h1 className={style.title}>Contact me.</h1>
 
-      <h4 className={style.title_h4}>Get in Touch</h4>
-      <div className={style.Contact_container}>
-        <div className={style.box}>
-          <div className={style.icon}>
-            {" "}
-            <FaLocationArrow />
+        <h4 className={style.titleTwo}>Get in Touch</h4>
+        <div className={style.ContactContainer}>
+          <div className={style.box}>
+            <div className={style.icon}>
+              {" "}
+              <FaLocationArrow />
+            </div>
+            <p className={style.text}>Address:BURUNDI,Bujumbura</p>
           </div>
-          <p className={style.text}>Address:BURUNDI,Bujumbura</p>
+
+          <div className={style.box}>
+            <div className={style.icon}>
+              <FaPhoneAlt />
+            </div>
+            <p className={style.text}>Phone:+25779335848</p>
+          </div>
         </div>
 
-        <div className={style.box}>
-          <div className={style.icon}>
-            <FaPhoneAlt />
+        <div>
+          <h5>find me on :</h5>
+          <div className={style.social}>
+            <a href='www.facebook.com'>
+              <FaFacebook />
+            </a>
+            <a href='https://twitter.com/IrakozeMars'>
+              <FaTwitter />
+            </a>
+            <a href='https://www.instagram.com/brucemarsirakoze/'>
+              <FaInstagram />
+            </a>
+            <a href='https://app.slack.com/client/T0151842PQC/D016N4RT9U2/thread/C014TM3FZAR-1593798449.022900'>
+              <FaSlack />
+            </a>
+            <a href='https://github.com/irakoze-bruce'>
+              <FaGithub />
+            </a>
+            <a href='https://mail.google.com/mail/u/0/'>
+              <FaEnvelope />
+            </a>
           </div>
-          <p className={style.text}>Phone:+25779335848</p>
-        </div>
-      </div>
-
-      <div>
-        <h5>find me on :</h5>
-        <div className={style.social}>
-          <a href='www.facebook.com'>
-            <FaFacebook />
-          </a>
-          <a href='https://twitter.com/IrakozeMars'>
-            <FaTwitter />
-          </a>
-          <a href='https://www.instagram.com/brucemarsirakoze/'>
-            <FaInstagram />
-          </a>
-          <a href='https://app.slack.com/client/T0151842PQC/D016N4RT9U2/thread/C014TM3FZAR-1593798449.022900'>
-            <FaSlack />
-          </a>
-          <a href='https://github.com/irakoze-bruce'>
-            <FaGithub />
-          </a>
-          <a href='https://mail.google.com/mail/u/0/'>
-            <FaEnvelope />
-          </a>
         </div>
       </div>
 
       <footer>
         <p>© Copyright 2020. All Rights Reserved</p>
         <p>
-          Designed by <a href='/'>Bruce Mars</a>
+          Designed by{" "}
+          <a href='/'>
+            <span>Bruce Mars</span>
+          </a>
         </p>
       </footer>
     </div>

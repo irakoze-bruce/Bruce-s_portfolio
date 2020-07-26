@@ -1,0 +1,28 @@
+/** @format */
+
+.Home {
+  margin: 8em auto;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+  font-weight: 0;
+}
+
+.Home_title {
+  text-align: center;
+  font-size: 3em;
+  text-transform: capitalize;
+}
+
+.Home_description {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  line-height: 28px;
+
+  text-transform: capitalize;
+}
+p {
+  margin: 3em 0;
+  text-align: center;
+  text-transform: capitalize;
+}

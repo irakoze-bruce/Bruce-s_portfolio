@@ -42,6 +42,14 @@ function Projects() {
               githubLink='https://github.com/irakoze-bruce/TODO-App'
             />
           </div>
+
+          <div className={style.ProjectsContainer}>
+            <ProjectCards
+              logo={logoReact}
+              name='Selling App'
+              githubLink='https://github.com/irakoze-bruce/selling'
+            />
+          </div>
         </div>
       </div>
     </div>

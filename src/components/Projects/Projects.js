@@ -18,24 +18,28 @@ function Projects() {
               name='Question App'
               githubLink='https://github.com/irakoze-bruce/Question-App.git'
             />
-            <ProjectCards logo={logoJs} name='Question App' githubLink='...' />
-            <ProjectCards logo={logoJs} name='Question App' githubLink='...' />
+            <ProjectCards
+              logo={logoJs}
+              name='Color Flipper'
+              githubLink='https://github.com/irakoze-bruce/color-flipper'
+            />
+            <ProjectCards logo={logoJs} name='Modal' githubLink='...' />
           </div>
           <div className={style.ProjectsContainer}>
             <ProjectCards
               logo={logoReact}
-              name='Question App'
-              githubLink='...'
+              name='Calculator App'
+              githubLink='https://github.com/irakoze-bruce/Calculator-App-'
             />
             <ProjectCards
               logo={logoReact}
-              name='Question App'
-              githubLink='...'
+              name='Phone Store App'
+              githubLink='https://github.com/irakoze-bruce/Phone-Store-App'
             />
             <ProjectCards
               logo={logoReact}
-              name='Question App'
-              githubLink='...'
+              name='Todo App'
+              githubLink='https://github.com/irakoze-bruce/TODO-App'
             />
           </div>
         </div>

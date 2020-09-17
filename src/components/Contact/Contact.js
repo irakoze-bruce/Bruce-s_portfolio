@@ -24,7 +24,7 @@ const Contact = () => {
               {" "}
               <FaLocationArrow />
             </div>
-            <p className={style.text}>Address:BURUNDI,Bujumbura</p>
+            <p className={style.text}>Address:BURUNDI</p>
           </div>
 
           <div className={style.box}>

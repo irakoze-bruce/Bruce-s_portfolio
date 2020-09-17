@@ -11,7 +11,7 @@ function Projects() {
     <div className={style.Projects}>
       <div>
         <div className={style.ProjectsContent}>
-          <h1 className={style.title}>Recent Projects.</h1>
+          <h1 className={style.title}>RECENTLY DONE PROJECT</h1>
           <div className={style.ProjectsContainer}>
             <ProjectCards
               logo={logoJs}

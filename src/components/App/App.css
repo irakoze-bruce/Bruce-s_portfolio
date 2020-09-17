@@ -1,12 +1,13 @@
 /** @format */
 
 .nav {
-  transition: ease-in-out 3s;
+  transition: height 5s;
+  background: none;
 }
 
 .scrolled {
   position: fixed;
-  background: rgb(250, 249, 249);
+  background: rgb(250, 251, 251);
   width: 1100px;
   top: 0;
   z-index: 1000;
@@ -27,11 +28,17 @@
 }
 
 .PortfolioName a {
-  color: black;
   text-decoration: none;
   font-size: 3em;
   font-family: "Kaushan Script", cursive;
   letter-spacing: -5px;
+}
+
+.portfolioNameOne {
+  color: #4458dc;
+}
+.portfolioNameTwo {
+  color: #854fee;
 }
 
 nav ul {
@@ -52,15 +59,56 @@ nav ul li a {
   font-weight: bold;
   padding: 8px;
 }
-.nav a:hover {
-  color: gray;
+.nav ul li a:hover {
+  color: #4458dc;
 }
 
-.active {
-  color: white;
-  background: rgb(223, 10, 10);
+.toggle {
+  top: -7%;
+  right: 2%;
+  float: right;
+  position: absolute;
+  display: none;
 }
 
-.unactive {
-  background: #000;
+@media screen and (max-width: 375px) {
+  .toggle {
+    display: block;
+  }
+
+  .Portfolio {
+    width: 375px;
+    overflow: hidden;
+  }
+  .Portfolio header {
+    display: block;
+    width: 100%;
+    z-index: -1000;
+  }
+  .PortfolioName {
+    text-align: center;
+  }
+
+  /* nav */
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+    overflow: hidden;
+    margin-top: -4em;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+    margin-left: 1px;
+  }
+
+  .navOpen {
+    overflow: visible;
+    transition: 0.3s all;
+    transition-duration: 0.5s;
+    margin-left: 0;
+  }
 }
